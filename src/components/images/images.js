@@ -1,0 +1,1 @@
+export const backgroundImg = 'https://raw.githubusercontent.com/dcartist/FrontEndHackathon/master/MOCKUP/Business/images/unsplash%3Am_7p45JfXQo.jpg'
