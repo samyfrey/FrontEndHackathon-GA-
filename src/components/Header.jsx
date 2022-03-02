@@ -3,7 +3,7 @@ import { Container } from './styles/Container.styled'
 import { Button } from './styles/Button.styled'
 import { ListColumns } from './styles/ListColumns.styled'
 import { Flex } from './styles/Flex.styled'
-import { Footer } from './styles/Footer.styled'
+import { SocialList } from './styles/SocialList.styled'
 
 export default function Header() {
 	return (
@@ -12,18 +12,20 @@ export default function Header() {
 				<Nav>
 					<Logo src='./images/logo.svg' alt='' />
 					<ListColumns>
+				
 						<ul>Work</ul>
 						<ul>Services</ul>
 						<ul>Company</ul>
 						<ul>Blogs</ul>
 						<ul>Resources</ul>
+				
 					</ListColumns>
 					<Button> Start a Project </Button>
 				</Nav>
 
 				<Flex>
 					<div>
-						<h1>Promote your business</h1>
+						<h1>Aliquet urna velit molestie mi ut</h1>
 						<p>
 							Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
 						</p>
@@ -36,7 +38,7 @@ export default function Header() {
 
 						
 				</Flex>
-				<Footer>
+				{/* <SocialList> */}
 					<ListColumns>
 						<ul>Facebook</ul>
 						<ul>Instagram</ul>
@@ -44,7 +46,7 @@ export default function Header() {
 						<ul>Behance</ul>
 					</ListColumns>
 
-				</Footer>
+				{/* </SocialList> */}
 
 			</Container>
 		</StyledHeader>

@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import { backgroundImg } from '../images/images'
+import { backgroundImg } from '../images/images.js'
 
 export const StyledHeader = styled.header`
     background-image: url(${backgroundImg});
@@ -8,7 +8,8 @@ export const StyledHeader = styled.header`
     justify-content: center;
     // padding: 90px 0;
     height: 100vh;
-    color: #ffff
+    color: #ffff;
+    
 
 `
 
@@ -18,7 +19,8 @@ export const Nav = styled.nav`
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-bottom: 40px;
+    // margin-bottom: 40px;
+    border: 1px #444 solid;
 
     // currently flex is row, with media query when size is reduced, direction is set to column 
 
@@ -29,6 +31,7 @@ export const Nav = styled.nav`
 
 
 export const Logo = styled.img`
+    border: 1px #444 solid;
 	@media (max-width: ${({ theme }) => theme.mobile}) {
 		margin-bottom: 40px;
 	}

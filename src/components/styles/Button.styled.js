@@ -10,6 +10,7 @@ export const Button = styled.button`
     padding: 12px 25px;
     background-color: #F7A125;
     color: #ffffff;
+    
 
     &:hover {
         opacity: 0.9;
