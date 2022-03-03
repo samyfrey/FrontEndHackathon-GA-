@@ -20,3 +20,13 @@ export const hallwayImg =
 
 export const greenRoomImg =
 	'https://github.com/dcartist/FrontEndHackathon/blob/master/MOCKUP/Business/images/unsplash:eHD8Y1Znfpk.jpg?raw=true'
+
+export const alexBartonImg = 'https://github.com/dcartist/FrontEndHackathon/blob/master/MOCKUP/Business/images/unsplash:ttSRjiYG_WM.jpg?raw=true'
+export const martaTimotyImg = 'https://github.com/dcartist/FrontEndHackathon/blob/master/MOCKUP/Business/images/unsplash:HRZUzoX1e6w.jpg?raw=true'
+export const samuelLeeImg = 'https://github.com/dcartist/FrontEndHackathon/blob/master/MOCKUP/Business/images/unsplash:PQeoQdkU9jQ.jpg?raw=true'
+export const rodneyMaggioImg = 'https://github.com/dcartist/FrontEndHackathon/blob/master/MOCKUP/Business/images/unsplash:X6Uj51n5CE8.jpg?raw=true'
+export const claireSpencerImg = 'https://github.com/dcartist/FrontEndHackathon/blob/master/MOCKUP/Business/images/unsplash:mEZ3PoFGs_k.jpg?raw=true'
+export const ericParkerImg = 'https://github.com/dcartist/FrontEndHackathon/blob/master/MOCKUP/Business/images/unsplash:LWkFHEGpleE.jpg?raw=true'
+export const dexterSporerImg = 'https://github.com/dcartist/FrontEndHackathon/blob/master/MOCKUP/Business/images/unsplash:baeDx6LuSt4.jpg?raw=true'
+export const erinUllrichImg = 'https://github.com/dcartist/FrontEndHackathon/blob/master/MOCKUP/Business/images/unsplash:uI0VQfvPY6g.jpg?raw=true'
+export const williamBodeImg = 'https://github.com/dcartist/FrontEndHackathon/blob/master/MOCKUP/Business/images/unsplash:qp30IRLPgsg.jpg?raw=true'

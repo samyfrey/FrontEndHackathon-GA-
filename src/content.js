@@ -5,7 +5,10 @@ import { vesselImg } from './components/images/images'
 import { meetingroomImg } from './components/images/images'
 import { hallwayImg } from './components/images/images'
 import { greenRoomImg } from './components/images/images'
-
+import { alexBartonImg } from './components/images/images'
+import { martaTimotyImg } from './components/images/images'
+import { samuelLeeImg } from './components/images/images'
+import { rodneyMaggioImg, claireSpencerImg, ericParkerImg, dexterSporerImg, erinUllrichImg, williamBodeImg } from './components/images/images'
 
 
 export const learnMoreImg = [
@@ -76,4 +79,52 @@ export const ourTeamWorksTxt = [
 		text:
 			'A lacus vestibulum sed arcu non odio. ',
 	},
+]
+
+export const teamsImg = [
+	{
+		name: 'Alex Barton',
+		text: '',
+		urlImg: alexBartonImg,
+	},
+	{
+		name: 'Marta Timoty',
+		text: '',
+		urlImg: martaTimotyImg,
+	},
+	{
+		name: 'Samuel Lee',
+		text: '',
+		urlImg: samuelLeeImg,
+	},
+	{
+		name: 'Rodney Maggio',
+		text: '',
+		urlImg: rodneyMaggioImg,
+	},
+	{
+		name: 'Claire Spencer',
+		text: '',
+		urlImg: claireSpencerImg,
+	},
+	{
+		name: 'Eric Parker',
+		text: '',
+		urlImg: ericParkerImg,
+	},
+	{
+		name: 'Dexter Sporer',
+		text: '',
+		urlImg: dexterSporerImg,
+	},
+	{
+		name: 'Erin Ullrich',
+		text: '',
+		urlImg: erinUllrichImg,
+	},
+	{
+		name: 'William Bode',
+		text: '',
+		urlImg: williamBodeImg,
+	}
 ]

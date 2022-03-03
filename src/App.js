@@ -45,6 +45,7 @@ function App() {
 					<Divider key={index} item={item} />
 				))}
 			</StyledDivider>
+			
 			</Container>
 		</ThemeProvider>
 	)
