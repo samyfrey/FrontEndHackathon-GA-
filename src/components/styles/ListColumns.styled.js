@@ -13,5 +13,5 @@ export const ListColumns = styled.ul`
     //     flex: 1;
     // }
     // white
-    border: 1px #ccc solid;
+    // border: 1px #ccc solid;
 `

@@ -20,7 +20,7 @@ export const Nav = styled.nav`
     align-items: center;
     justify-content: space-between;
     // margin-bottom: 40px;
-    border: 1px #444 solid;
+    // border: 1px #444 solid;
 
     // currently flex is row, with media query when size is reduced, direction is set to column 
 
@@ -31,7 +31,7 @@ export const Nav = styled.nav`
 
 
 export const Logo = styled.img`
-    border: 1px #444 solid;
+    // border: 1px #444 solid;
 	@media (max-width: ${({ theme }) => theme.mobile}) {
 		margin-bottom: 40px;
 	}

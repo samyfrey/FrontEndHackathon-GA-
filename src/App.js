@@ -3,7 +3,10 @@ import Header from './components/Header'
 import GlobalStyles from './components/styles/Global'
 import content from './content'
 import Card from './components/Card'
-// import Container from './components/styles/Container.styled.js'
+import { Container } from './components/styles/Container.styled.js'
+import { WWDBest } from './components/WWDBest'
+import { PhotoGallery } from './components/PhotoGallery'
+import { GalleryContainer } from './components/styles/GalleryContainer'
 
 const theme = {
   colors: {
@@ -16,17 +19,23 @@ const theme = {
 
 function App() {
   return (
-
-    <ThemeProvider theme={theme}>
-    <GlobalStyles />
-    <Header />
-    {/* <Container> */}
-      {content.map((item, index) => (
-        <Card key={index} item={item} />
-      ))}
-    {/* </Container> */}
-    </ThemeProvider>
-  );
+		<ThemeProvider theme={theme}>
+			<GlobalStyles />
+			<Header />
+			<Container>
+				{content.map((item, index) => (
+					<Card key={index} item={item} />
+				))}
+			</Container>
+			<WWDBest />
+			{/* Our Works */}
+			<GalleryContainer>
+				{content.map((item, index) => (
+					<PhotoGallery key={index} item={item} />
+				))}
+			</GalleryContainer>
+		</ThemeProvider>
+	)
 }
 
 export default App;
