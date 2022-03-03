@@ -1,14 +1,14 @@
 import { coffeeImg } from './components/images/images'
 import { buildingsImg } from './components/images/images'
 import { phonesImg } from './components/images/images'
-// import { vesselImg } from './components/images/images'
-// import { meetingroomImg } from './components/images/images'
-// import { hallwayImg } from './components/images/images'
-// import { greenRoomImg } from './components/images/images'
+import { vesselImg } from './components/images/images'
+import { meetingroomImg } from './components/images/images'
+import { hallwayImg } from './components/images/images'
+import { greenRoomImg } from './components/images/images'
 
 
 
-const content = [
+export const learnMore = [
 	{
 		id: 1,
 		number: '01',
@@ -23,34 +23,38 @@ const content = [
 		body: "You wouldn't paginate a conversation in real life, so why do it online? Our threads have just-in-time loading for a more natural flow.",
 		urlImg: buildingsImg,
 	},
-
-	// export const ourWorks = [
-  {
-    id: 3,
-    // flexGrow: 2,
-    urlImg: phonesImg,
-  },
-	// 	{
-	// 		id: 4,
-	// 		flexGrow: 2,
-	// 		urlImg: meetingroomImg,
-	// 	},
-	// 	{
-	// 		id: 5,
-	// 		flexGrow: 1,
-	// 		width: '100%',
-	// 		urlImg: hallwayImg,
-	// 	},
-	// 	{
-	// 		id: 6,
-	// 		flexGrow: 2,
-	// 		urlImg: greenRoomImg,
-	// 	},
-	// 	{
-	// 		id: 7,
-	// 		flexGrow: 2,
-	// 		urlImg: vesselImg,
-	// 	}
-	// ]
 ]
-export default content
+
+export const ourWorks = [
+	{
+		id: 3,
+		flexGrow: 2,
+		height: '300px',
+		urlImg: phonesImg,
+	},
+	{
+		id: 4,
+		flexGrow: 2,
+		height: '300px',
+		urlImg: meetingroomImg,
+	},
+	{
+		id: 5,
+		flexGrow: 1,
+		width: '100%',
+		height: '300px',
+		urlImg: hallwayImg,
+	},
+	{
+		id: 6,
+		flexGrow: 2,
+		height: '300px',
+		urlImg: greenRoomImg,
+	},
+	{
+		id: 7,
+		flexGrow: 2,
+		height: '300px',
+		urlImg: vesselImg,
+	},
+]

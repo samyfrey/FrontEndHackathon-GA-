@@ -1,10 +1,10 @@
-import { GalleryContainer } from './styles/GalleryContainer'
 
-export const PhotoGallery = ({item: {id, flexGrow, width, urlImg }}) => {
+export const PhotoGallery = ({item: {height, flexGrow, width, urlImg }}) => {
     return (
-        <GalleryContainer>
-            <img src={`${urlImg}`} alt='' />
+            <div>
+            <img src={`${urlImg}`} alt='' style={{width: `${width}`, height: `${height}`, flexGrow: `${flexGrow}`}}/>
+            </div>
 
-        </GalleryContainer>
+      
     )
 }

@@ -7,6 +7,7 @@ export const GalleryContainer = styled.div`
     display: flex;
     flex-wrap: wrap;
     background: grey;
+    object-fit: cover;
     justify-content: center
     
 

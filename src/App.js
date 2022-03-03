@@ -1,7 +1,7 @@
 import { ThemeProvider } from 'styled-components'
 import Header from './components/Header'
 import GlobalStyles from './components/styles/Global'
-import content from './content'
+import { learnMore, ourWorks } from './content'
 import Card from './components/Card'
 import { Container } from './components/styles/Container.styled.js'
 import { WWDBest } from './components/WWDBest'
@@ -23,14 +23,14 @@ function App() {
 			<GlobalStyles />
 			<Header />
 			<Container>
-				{content.map((item, index) => (
+				{learnMore.map((item, index) => (
 					<Card key={index} item={item} />
 				))}
 			</Container>
 			<WWDBest />
 			{/* Our Works */}
 			<GalleryContainer>
-				{content.map((item, index) => (
+				{ourWorks.map((item, index) => (
 					<PhotoGallery key={index} item={item} />
 				))}
 			</GalleryContainer>
