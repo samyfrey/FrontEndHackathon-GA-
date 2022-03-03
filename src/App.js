@@ -26,14 +26,13 @@ function App() {
 				{learnMore.map((item, index) => (
 					<Card key={index} item={item} />
 				))}
-			</Container>
 			<WWDBest />
-			{/* Our Works */}
 			<GalleryContainer>
 				{ourWorks.map((item, index) => (
 					<PhotoGallery key={index} item={item} />
-				))}
+					))}
 			</GalleryContainer>
+			</Container>
 		</ThemeProvider>
 	)
 }
