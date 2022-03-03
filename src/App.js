@@ -1,12 +1,15 @@
 import { ThemeProvider } from 'styled-components'
 import Header from './components/Header'
 import GlobalStyles from './components/styles/Global'
-import { learnMore, ourWorks } from './content'
+import { learnMoreImg, ourWorksImg, ourWorksTxt } from './content'
 import Card from './components/Card'
 import { Container } from './components/styles/Container.styled.js'
 import { WWDBest } from './components/WWDBest'
 import { PhotoGallery } from './components/PhotoGallery'
 import { GalleryContainer } from './components/styles/GalleryContainer'
+import { StyledDivider } from './components/styles/Divider.styled'
+import Divider from './components/Divider'
+import { ourTeamWorksTxt } from './content'
 
 const theme = {
   colors: {
@@ -23,15 +26,25 @@ function App() {
 			<GlobalStyles />
 			<Header />
 			<Container>
-				{learnMore.map((item, index) => (
+				{learnMoreImg.map((item, index) => (
 					<Card key={index} item={item} />
 				))}
-			<WWDBest />
+			<WWDBest/>
+			<StyledDivider>
+				{ourWorksTxt.map((item, index) => (
+					<Divider key={index} item={item} />
+				))}
+			</StyledDivider>
 			<GalleryContainer>
-				{ourWorks.map((item, index) => (
+				{ourWorksImg.map((item, index) => (
 					<PhotoGallery key={index} item={item} />
 					))}
 			</GalleryContainer>
+			<StyledDivider>
+				{ourTeamWorksTxt.map((item, index) => (
+					<Divider key={index} item={item} />
+				))}
+			</StyledDivider>
 			</Container>
 		</ThemeProvider>
 	)

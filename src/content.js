@@ -8,7 +8,7 @@ import { greenRoomImg } from './components/images/images'
 
 
 
-export const learnMore = [
+export const learnMoreImg = [
 	{
 		id: 1,
 		number: '01',
@@ -25,7 +25,7 @@ export const learnMore = [
 	},
 ]
 
-export const ourWorks = [
+export const ourWorksImg = [
 	{
 		id: 3,
 		flexGrow: 2,
@@ -60,5 +60,20 @@ export const ourWorks = [
 		height: '300px',
 		width: '400px',
 		urlImg: vesselImg,
+	},
+]
+
+export const ourWorksTxt = [
+	{
+		title: 'Our works',
+		text:
+			'Pretium lectus quam id leo in vitae turpis massa sed. Nibh sit amet commodo nulla facilisi nullam vehicula. A lacus vestibulum sed arcu non odio. ',
+	},
+]
+export const ourTeamWorksTxt = [
+	{
+		title: 'Our Team works',
+		text:
+			'A lacus vestibulum sed arcu non odio. ',
 	},
 ]
