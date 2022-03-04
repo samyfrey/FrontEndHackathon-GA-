@@ -12,6 +12,7 @@ import Divider from './components/Divider'
 import { ourTeamWorksTxt } from './content'
 import Footer from './components/Footer'
 import Clients from './components/Clients'
+import { BlueDivider } from './components/BlueDivider'
 
 
 const theme = {
@@ -43,6 +44,7 @@ function App() {
 						<PhotoGallery key={index} item={item} />
 					))}
 				</GalleryContainer>
+				<BlueDivider/>
 				<StyledDivider>
 					{ourTeamWorksTxt.map((item, index) => (
 						<Divider key={index} item={item} />
