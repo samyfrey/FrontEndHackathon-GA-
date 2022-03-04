@@ -18,17 +18,16 @@ export default function Footer() {
 
     <StyledFooter>
       <Container>
-        <img src='./images/logo_white.svg' alt='' />
 
        <StyledFooterNav>
 
           <ul>
+            <img src='./images/logo.svg' alt='' />
             <li>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua
             </li>
-            <li>+1-543-123-4567</li>
-            <li>example@huddle.com</li>
+          <SocialIcons />
           </ul>
           <ul>
             <li style={titleStyles}>Product</li>
@@ -63,9 +62,8 @@ export default function Footer() {
 
 
        </StyledFooterNav>
-          <SocialIcons />
+        {/* <p>&copy; Copyright</p> */}
 
-        <p>&copy; Copyright</p>
       </Container>
     </StyledFooter>
   )

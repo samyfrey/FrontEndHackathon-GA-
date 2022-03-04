@@ -11,6 +11,7 @@ import { StyledDivider } from './components/styles/Divider.styled'
 import Divider from './components/Divider'
 import { ourTeamWorksTxt } from './content'
 import Footer from './components/Footer'
+import Clients from './components/Clients'
 
 
 const theme = {
@@ -57,6 +58,7 @@ function App() {
 						<Divider key={index} item={item} />
 					))}
 				</StyledDivider>
+				<Clients />
 			</Container>
 			<Footer />
 		</ThemeProvider>

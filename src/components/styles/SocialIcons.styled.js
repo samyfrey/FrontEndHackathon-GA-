@@ -20,5 +20,6 @@ export const StyledSocialIcons = styled.div`
 		height: 40px;
 		width: 40px;
 		text-decoration: none;
+		background-color: #f7a125;
 	}
 `

@@ -1,7 +1,8 @@
 import styled from 'styled-components'
 
 export const Container = styled.div`
-    max-width: 900px;
+    max-width: 1000px;
+    padding: 10px;
     margin: auto;
     // max-width: 100%;
     // padding: 20 0px;
@@ -9,5 +10,6 @@ export const Container = styled.div`
     // justify-content: space-around;
     // border: 10px #444 solid;
 
-    
+
+    }
 `

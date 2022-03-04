@@ -37,7 +37,7 @@ export default function Header() {
 
 						
 				</Flex>
-				{/* <SocialList> */}
+				<SocialList>
 					<ListColumns>
 						<ul>Facebook</ul>
 						<ul>Instagram</ul>
@@ -45,7 +45,7 @@ export default function Header() {
 						<ul>Behance</ul>
 					</ListColumns>
 
-				{/* </SocialList> */}
+				</SocialList>
 
 			</Container>
 		</StyledHeader>

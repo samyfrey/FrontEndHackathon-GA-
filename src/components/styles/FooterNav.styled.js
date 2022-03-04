@@ -2,12 +2,15 @@ import styled from 'styled-components'
 
 export const StyledFooterNav = styled.div`
 	display: flex;
-	align-items: center;
+	align-items: flex-start;
 	font-size: 12px;
-	vertical-align: text-top;
+	// border: 3px solid green;
+	
+
 
 	& > div,
 	& > ul {
 		flex: 1;
 	}
+
 `
