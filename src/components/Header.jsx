@@ -29,12 +29,11 @@ export default function Header() {
 						<p>
 							Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
 						</p>
+						<Button>Contact Us</Button>
 
 					</div>
-					<div style={{display: 'inline-block'}}>
-						<Button>Contact Us</Button>
-						<p>Our Works</p>
-					</div>
+					<p>Our Works</p>
+					
 
 						
 				</Flex>

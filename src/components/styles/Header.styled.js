@@ -5,9 +5,9 @@ export const StyledHeader = styled.header`
     background-image: url(${backgroundImg});
     background-size: cover;
     background-position: center;
-    justify-content: center;
+    // justify-content: center;
     // padding: 90px 0;
-    height: 100vh;
+    height: 800px;
     color: #ffff;
     
 

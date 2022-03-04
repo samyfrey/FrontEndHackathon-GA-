@@ -9,7 +9,7 @@ export const StyledDivider = styled.div`
 	// background-color: grey;
 	max-width: 50%;
     font-size: 15px;
-	margin: auto;
-    margin-bottom: 40px
+	margin: 100px auto 30px;
+
 	
 `
