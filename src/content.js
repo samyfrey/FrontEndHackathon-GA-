@@ -56,14 +56,7 @@ export const ourWorksImg = [
 		height: '300px',
 		width: '400px',
 		urlImg: greenRoomImg,
-	},
-	{
-		id: 7,
-		flexGrow: 2,
-		height: '300px',
-		width: '400px',
-		urlImg: vesselImg,
-	},
+	}
 ]
 
 export const ourWorksTxt = [

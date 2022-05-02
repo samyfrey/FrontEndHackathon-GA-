@@ -12,6 +12,5 @@ export const ListColumns = styled.ul`
     & > ul {
         flex: 1;
     }
-    // white
-    // border: 1px #ccc solid;
+
 `

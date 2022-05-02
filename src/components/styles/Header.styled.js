@@ -2,15 +2,18 @@ import styled from 'styled-components'
 import { backgroundImg } from '../images/images.js'
 
 export const StyledHeader = styled.header`
-    background-image: url(${backgroundImg});
-    background-size: cover;
-    background-position: center;
-    // justify-content: center;
-    // padding: 90px 0;
-    height: 800px;
-    color: #ffff;
-    
+	background-image: url(${backgroundImg});
+	background-size: cover;
+	background-position: center;
+	// justify-content: center;
+	// padding: 90px 0;
+	height: 800px;
+	color: #ffff;
+	ul {
+        padding: 0;
+        list-style-type: none;
 
+    }
 `
 
 // since the nav and header components are only used in the header component, we put those components in this header style component 

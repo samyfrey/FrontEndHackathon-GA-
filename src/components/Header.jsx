@@ -30,13 +30,13 @@ export default function Header() {
 							Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
 						</p>
 						<Button>Contact Us</Button>
+						{/* <p>Our Works</p> */}
 
 					</div>
-					<p>Our Works</p>
 					
 
-						
 				</Flex>
+						
 				<SocialList>
 					<ListColumns>
 						<ul>Facebook</ul>

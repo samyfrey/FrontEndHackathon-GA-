@@ -1,5 +1,6 @@
 import { StyledCard } from "./styles/Card.styled"
 import { Button } from './styles/Button.styled'
+
 export default function Card({ item: {id, number, title, body, urlImg }}) {
     return (
         <StyledCard layout={id % 2 === 0 && 'row-reverse'}>

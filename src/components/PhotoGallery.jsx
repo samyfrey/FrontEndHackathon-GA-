@@ -2,7 +2,6 @@
 export const PhotoGallery = ({item: {height, flexGrow, width, name, urlImg }}) => {
 
     const imageStyle = {
-        width: `${width}`, 
         height: `${height}`, 
         flexGrow: `${flexGrow}`, 
         objectFit: 'cover',
