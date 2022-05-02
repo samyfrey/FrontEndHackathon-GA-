@@ -1,70 +1,111 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
 
-In the project directory, you can run:
+Deployed site: https://samyfrey.github.io/frontendhackathon-ga/
 
-### `npm start`
+Site to replicate: [Business Mockup](https://github.com/dcartist/FrontEndHackathon/blob/master/MOCKUP/Business/BusinessLandingPage.png)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+# Frontend Hackathon Mockup 
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Responsive mock up business website built during a 2-day frontend hackathon.
+See screenshots at the end of the readme. 
 
-### `npm test`
+Tech stack used: ReactJS and react-styled components.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Objective & Strategy 
 
-### `npm run build`
+For this hackathon, I identified various parts in the site that could be reproduced using the same component (photo gallery, buttons and cards). In only a couple of hours, I learned how to use styled components which I found to be the most appropriate technology to do so. 
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+My main objective was to standardize the code as much as possible and only use a content file to feed the rendering components. 
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Coding Approach
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+All of the content is stored in a content.js file including image size, height, flex etc. 
 
-### `npm run eject`
+I built my app.js file passing in all the properties defined in the content.js file as prop in each reusable component (see PhotoGallery for example) mapping through the array of content.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+```
+function App() {
+  return (
+		<ThemeProvider theme={theme}>
+			<GlobalStyles />
+			<Header />
+			<Container>
+				{learnMoreImg.map((item, index) => (
+					<Card key={index} item={item} />
+				))}
+				<WWDBest />
+				<StyledDivider>
+					{ourWorksTxt.map((item, index) => (
+						<Divider key={index} item={item} />
+					))}
+				</StyledDivider>
+				<GalleryContainer>
+					{ourWorksImg.map((item, index) => (
+						<PhotoGallery key={index} item={item} />
+					))}
+				</GalleryContainer>
+				<BlueDivider/>
+				<StyledDivider>
+					{ourTeamWorksTxt.map((item, index) => (
+						<Divider key={index} item={item} />
+					))}
+				</StyledDivider>
+				<GalleryContainer>
+					{teamsImg.map((item, index) => (
+						<PhotoGallery key={index} item={item} />
+					))}
+				</GalleryContainer>
+				<StyledDivider>
+					{ourSatisfiedText.map((item, index) => (
+						<Divider key={index} item={item} />
+					))}
+				</StyledDivider>
+				<Clients />
+			</Container>
+			<Footer />
+		</ThemeProvider>
+	)
+}
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+export default App;
+```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+**Example of reusuable component, <PhotoGallery.**
 
-## Learn More
+This component is rendered by using the props passed in from the App.JS file.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+```
+export const PhotoGallery = ({item: {height, flexGrow, width, name, urlImg }}) => {
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+    const imageStyle = {
+        width: `${width}`,
+        height: `${height}`, 
+        flexGrow: `${flexGrow}`, 
+        objectFit: 'cover',
+        border: '5px solid white',
 
-### Code Splitting
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+    }
 
-### Analyzing the Bundle Size
+    return (
+            <div>
+            <img src={`${urlImg}`} alt='' style={imageStyle}/>
+            <p>{name}</p>
+            </div>
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+      
+    )
+}
+```
+## Challenges
 
-### Making a Progressive Web App
+My biggest challenge was building the photo grid. As I didn't want to hardcode any property in the component, I had to find a way to render images dynamically based on each image's defined size. After multiple iterations, I found that using the flex-wrap property and defining a width/height for each content image, along with cover-fit was the best way for doing this. See the result: 
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+<p align="center">
+<img src="https://user-images.githubusercontent.com/89148403/166308427-5c083631-644e-42bc-8556-aaea5e471ca9.png" alt="site-overview" width="700" >
+</p>
 
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Screenshots
+![screencapture-localhost-3000-frontendhackathon-ga-2022-05-02-14_58_29](https://user-images.githubusercontent.com/89148403/166308292-25209ebd-fefb-497f-8114-9c142777a3c0.png)
