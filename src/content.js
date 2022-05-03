@@ -14,6 +14,7 @@ import { rodneyMaggioImg, claireSpencerImg, ericParkerImg, dexterSporerImg, erin
 export const learnMoreImg = [
 	{
 		id: 1,
+		alt: 'coffee and laptop image',
 		number: '01',
 		title: 'Perfect solution for your website',
 		body: 'Scelerisque in dictum non consectetur. Neque laoreet suspendisse interdum consectetur. Nascetur ridiculus mus mauris vitae ultricies leo. Sollicitudin aliquam ultrices sagittis orci a scelerisque purus semper. In hac habitasse platea dictumst vestibulum rhoncus est pellentesque elit. ',
@@ -21,6 +22,7 @@ export const learnMoreImg = [
 	},
 	{
 		id: 2,
+		alt: 'high-rise buildings aerial image',
 		number: '02',
 		title: 'Create your masterpiece web design',
 		body: "You wouldn't paginate a conversation in real life, so why do it online? Our threads have just-in-time loading for a more natural flow.",
@@ -31,13 +33,16 @@ export const learnMoreImg = [
 export const ourWorksImg = [
 	{
 		id: 3,
+		alt: 'music mobile app screenshots',
 		flexGrow: 2,
 		height: '300px',
 		width: '400px',
 		urlImg: phonesImg,
+
 	},
 	{
 		id: 4,
+		alt: 'large meeting room image',
 		flexGrow: 2,
 		height: '300px',
 		width: '400px',
@@ -45,6 +50,7 @@ export const ourWorksImg = [
 	},
 	{
 		id: 5,
+		alt: 'glass doors office hallway image',
 		flexGrow: 1,
 		height: '300px',
 		width: '800px',
@@ -52,6 +58,7 @@ export const ourWorksImg = [
 	},
 	{
 		id: 6,
+		alt: 'bright meeting room image',
 		flexGrow: 2,
 		height: '300px',
 		width: '400px',
@@ -59,6 +66,7 @@ export const ourWorksImg = [
 	},
 	{
 		id: 7,
+		alt: 'new york vessel image',
 		flexGrow: 2,
 		height: '300px',
 		width: '400px',
@@ -90,6 +98,7 @@ export const ourSatisfiedText = [
 export const teamsImg = [
 	{
 		name: 'Alex Barton',
+		alt: 'Photo Alex Barton',
 		text: '',
 		height: '300px',
 		width: '200px',
@@ -97,6 +106,7 @@ export const teamsImg = [
 	},
 	{
 		name: 'Marta Timoty',
+		alt: 'Photo Marta Timoty',
 		text: '',
 		height: '300px',
 		width: '200px',
@@ -105,12 +115,15 @@ export const teamsImg = [
 	{
 		name: 'Samuel Lee',
 		text: '',
+		alt: 'Photo Samuel Lee',
+		text: '',
 		height: '300px',
 		width: '200px',
 		urlImg: samuelLeeImg,
 	},
 	{
 		name: 'Rodney Maggio',
+		alt: 'Photo Rodney Maggio',
 		text: '',
 		height: '300px',
 		width: '200px',
@@ -118,6 +131,7 @@ export const teamsImg = [
 	},
 	{
 		name: 'Claire Spencer',
+		alt: 'Photo Claire Spencer',
 		text: '',
 		height: '300px',
 		width: '200px',
@@ -125,6 +139,7 @@ export const teamsImg = [
 	},
 	{
 		name: 'Eric Parker',
+		alt: 'Photo Eric Parker',
 		text: '',
 		height: '300px',
 		width: '200px',
@@ -132,6 +147,7 @@ export const teamsImg = [
 	},
 	{
 		name: 'Dexter Sporer',
+		alt: 'Photo Dexter Sporer',
 		text: '',
 		height: '300px',
 		width: '200px',
@@ -139,6 +155,7 @@ export const teamsImg = [
 	},
 	{
 		name: 'Erin Ullrich',
+		alt: 'Photo Erin Ullrich',
 		text: '',
 		height: '300px',
 		width: '200px',

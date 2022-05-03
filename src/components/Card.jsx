@@ -1,7 +1,7 @@
 import { StyledCard } from "./styles/Card.styled"
 import { Button } from './styles/Button.styled'
 
-export default function Card({ item: {id, number, title, body, urlImg }}) {
+export default function Card({ item: {id, number, title, body, alt, urlImg }}) {
     return (
         <StyledCard layout={id % 2 === 0 && 'row-reverse'}>
             <div>
@@ -11,7 +11,7 @@ export default function Card({ item: {id, number, title, body, urlImg }}) {
                 <Button> Learn More </Button>
             </div>
             <div>
-                <img src={`${urlImg}`} alt=''/>
+                <img src={`${urlImg}`} alt={`${alt}`}/>
             </div>
         </StyledCard>
     )

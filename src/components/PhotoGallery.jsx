@@ -1,5 +1,5 @@
 
-export const PhotoGallery = ({item: {height, flexGrow, width, name, urlImg }}) => {
+export const PhotoGallery = ({item: {height, flexGrow, width, name, alt, urlImg }}) => {
 
     const imageStyle = {
         width: `${width}`,
@@ -13,7 +13,7 @@ export const PhotoGallery = ({item: {height, flexGrow, width, name, urlImg }}) =
 
     return (
             <div>
-            <img src={`${urlImg}`} alt='' style={imageStyle}/>
+            <img src={`${urlImg}`} alt={`${alt}`} style={imageStyle}/>
             <p>{name}</p>
             </div>
 

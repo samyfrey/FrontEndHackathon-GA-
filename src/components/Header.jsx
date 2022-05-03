@@ -10,7 +10,7 @@ export default function Header() {
 		<StyledHeader>
 			<Container>
 				<Nav>
-					<Logo src='./images/logo.svg' alt='' />
+					<Logo src='./images/logo.svg' alt='lorem ipsum logo' />
 					<ListColumns>
 				
 						<ul>Work</ul>
@@ -30,7 +30,6 @@ export default function Header() {
 							Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
 						</p>
 						<Button>Contact Us</Button>
-						{/* <p>Our Works</p> */}
 
 					</div>
 					
