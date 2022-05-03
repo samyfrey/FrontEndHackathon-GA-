@@ -5,6 +5,9 @@ export const StyledFooter = styled.footer`
 	color: #fff;
 	padding: 100px 0 60px;
 
+	a {
+		color: white;
+	}
 	// takes the bullet points off the ul
 	ul {
 		list-style-type: none;
@@ -16,10 +19,13 @@ export const StyledFooter = styled.footer`
 
 	p {
 		text-align: right;
-	}
+	};
 
 	@media (max-width: ${({ theme }) => theme.mobile}) {
-		text-align: center;
+
+        display:flex;
+
+
 		ul {
 			padding: 0;
 		}

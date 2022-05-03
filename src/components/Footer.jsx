@@ -12,9 +12,6 @@ export default function Footer() {
 
   return (
 
-    // CONTACT US
-    // FOOTER NAV
-
 
     <StyledFooter>
       <Container>
@@ -24,8 +21,7 @@ export default function Footer() {
           <ul>
             <img src='./images/logo.svg' alt='' />
             <li>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua
+             Reproduced by Samy Frey. Go to <a href='https://samyfrey.com'>samyfrey.com</a> for more information. 
             </li>
           <SocialIcons />
           </ul>
@@ -62,7 +58,6 @@ export default function Footer() {
 
 
        </StyledFooterNav>
-        {/* <p>&copy; Copyright</p> */}
 
       </Container>
     </StyledFooter>
