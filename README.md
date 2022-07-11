@@ -14,7 +14,7 @@ Tech stack used: ReactJS and react-styled components.
 
 ## Objective & Strategy 
 
-For this hackathon, I identified various parts in the site that could be reproduced using the same component (photo gallery, buttons and cards). In only a couple of hours, I learned how to use styled components which I found to be the most appropriate technology to do so. 
+For this hackathon, I identified various parts in the site that could be reproduced using the same component (photo gallery, buttons and cards). In only a couple of hours, I learned how to use styled components which I found to be the most appropriate technology to do so. See the explanation of the Photo Gallery component to know why. 
 
 My main objective was to standardize the code as much as possible and only use a content file to feed the rendering components. 
 
@@ -23,6 +23,7 @@ My main objective was to standardize the code as much as possible and only use a
 All of the content is stored in a content.js file including image size, height, flex etc. 
 
 I built my app.js file passing in all the properties defined in the content.js file as prop in each reusable component (see PhotoGallery for example) mapping through the array of content.
+
 
 ```
 function App() {
@@ -74,7 +75,9 @@ export default App;
 
 **Example of reusuable component, <PhotoGallery.**
 
-This component is rendered by using the props passed in from the App.JS file.
+This component is rendered by using the props passed in from the App.JS file and feed the styled component dynimically - this was the biggest benefit I found when using styled-components, which helped me save so much time. 
+
+I use this same component for both the Our Works and Our Team Works sections. 
 
 ```
 export const PhotoGallery = ({item: {height, flexGrow, width, name, urlImg }}) => {
